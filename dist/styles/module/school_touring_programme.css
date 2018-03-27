@@ -1,0 +1,169 @@
+.main {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.school_touring_programme {
+	text-align: center;
+	background: #fff;
+	padding: 3.2rem 7%;
+	line-height: 1.8rem;
+	font-size: .9rem;
+}
+
+.school_touring_programme h2 {
+	line-height: 3rem;
+	color: #9db52b;
+	font-family: GothamMedium;
+	font-weight: normal;
+}
+
+.programme_list {
+	margin: 2rem 0;
+	font-size: 0;
+}
+
+.programme_list li {
+	display: inline-block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin-right: 2%;
+	width: 49%;
+	background: #fff;
+	padding: 1.5rem;
+	margin-bottom: 2%;
+}
+
+.programme_list li:nth-child(2n) {
+	margin-right: 0;
+}
+
+.img_box,
+.info_box {
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+
+.img_box {
+	width: 44%;
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-top: 31.43%;
+}
+
+.img_box img {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+.info_box {
+	width: 53%;
+	font-size: .9rem;
+	margin-left: 3%;
+}
+
+.theatre_info {
+    color: #999;
+    float: left;
+    width: 100%;
+}
+
+.programme_name_box {
+	clear: both;
+    font-size: 1.2rem;
+    font-family: GothamLight;
+    font-weight: bold;
+    line-height: 1.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.programme_name_box strong {
+    font-family: GothamMedium;
+    margin-right: .32rem;
+}
+
+.time_box {
+    margin: 1rem 0;
+    padding: 0 .5rem;
+}
+
+.time_box:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: url('../images/time_icon.png') center no-repeat;
+    background-size: 100% auto;
+}
+
+.time_box .time {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .5rem;
+    color: #666;
+}
+
+.detail_btn {
+	display: block;
+	width: 40%;
+	line-height: 3.2rem;
+	background: #9db52b;
+	color: #fff;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.school_touring_programme {
+		padding: 1.6rem 4%;
+	}
+    .programme_list li {
+    	display: block;
+    	margin-right: 0;
+    	width: auto;
+    	padding: .5rem;
+    	margin-bottom: 2rem;
+    	padding-bottom: 2rem;
+    }
+
+    .img_box,
+    .info_box {
+    	display: block;
+    }
+
+    .img_box {
+    	width: 100%;
+    	padding-top: 71.4%;
+    }
+
+    .info_box {
+    	width: auto;
+    	margin-top: 1rem;
+    	margin-left: .5rem;
+    }
+
+    .theatre_info {
+    	float: none;
+    }
+
+    .programme_name_box {
+    	margin-top: 1rem;
+    }
+
+    .detail_btn {
+    	width: 100%;
+    }
+}

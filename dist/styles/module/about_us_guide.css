@@ -1,0 +1,19 @@
+.main {
+	width: 100%;
+	max-width: 1200px;
+}
+.iac_content_box {
+	background: #fff;
+	text-align: center;
+	line-height: 2rem;
+	padding: 3rem;
+	margin: 15rem auto 6rem auto;
+}
+
+.iac_content_box p {
+	margin-bottom: 2rem;
+}
+
+.iac_content_box h2 {
+	font-family: GothamBold;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="max-age=3600" />
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="MobileOptimized" content="240" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<title>帮助中心</title>
+	<link rel="stylesheet" href="../styles/common/cn.css">
+	<link rel="stylesheet" href="../styles/common/header.css">
+	<link rel="stylesheet" href="../styles/common/footer.css">
+	<link rel="stylesheet" href="../styles/module/help.css">
+	
+</head>
+<body>
+	@@include('../include/header.html')
+	<div class="main_help">
+		<div class="main_content">
+			<div class="left_content">
+				<img src="../styles/images/help_logo.png" alt="" class="help_logo">
+				<ul class="help_list" id="helpList">
+					<li class="list_link active" data-index='0'>客户须知</li>
+					<li class="list_link" data-index='1'>规则介绍</li>
+					<li class="list_link" data-index='2'>法律声明</li>
+					<li class="list_link" data-index='3'>风险揭示书</li>
+					<li class="list_link" data-index='4'>风险自担与权利放弃承诺书</li>
+					<li class="list_link" data-index='5'>个股场外期权委托投资合作协议</li>
+				</ul>
+			</div>
+			<div class="right_content">
+				<div class="content_box" id="helpContentBox">
+					<div class="content_item">
+						@@include('../include/help_customer_information.html')
+					</div>
+					<div class="content_item hide">
+						@@include('../include/help_rule_intro.html')
+					</div>
+					<div class="content_item hide">
+						@@include('../include/help_legal_notice.html')
+					</div>
+					<div class="content_item hide">
+						@@include('../include/risk_disclosure.html')
+					</div>
+					<div class="content_item hide">
+						@@include('../include/help_commitment.html')
+					</div>
+					<div class="content_item hide">
+						@@include('../include/cooperative_agreements.html')
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('../include/footer.html')
+	<script src="../js/common/jquery-1.12.4.min.js"></script>
+	<script src="../js/common/header.js"></script>
+	<script src="../js/module/help.js"></script>
+</body>
+</html>
