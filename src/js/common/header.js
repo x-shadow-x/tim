@@ -15,14 +15,17 @@ $(function() {
 	});
 
 	(function setTabList() {
-		var queryArr = window.location.href.split('?')[1].split('&');
+		var tempLocation = window.location.href.split('?');
 		var query = {};
-		queryArr.forEach(function(item, index) {
-			var tempArr = item.split('=');
-			
-			query[tempArr[0]] = tempArr[1];
-		})
-		var index = query['index'];
+		if(tempLocation[1]) {
+			var queryArr = tempLocation[1].split('&');
+			queryArr.forEach(function(item, index) {
+				var tempArr = item.split('=');
+				query[tempArr[0]] = tempArr[1];
+			})
+		}
+		
+		var index = query['index'] || 0;
 		$('.tab_item').eq(index).addClass('active');
 	})()
 })
