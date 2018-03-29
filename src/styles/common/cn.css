@@ -17,7 +17,7 @@ time, mark, audio, video {
 
 body {
     line-height: 1;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     background: url('../images/mainbg.jpg') repeat-y center top;
     background-size: 100% auto;
