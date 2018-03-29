@@ -1,35 +1,7 @@
 footer {
-	background: #404040;
-	color: #fff;
-	padding: 20px 0;
-	font-size: 16px;
-	line-height: 30px;
-}
-
-.record_link {
-	font-size: 14px;
-}
-
-.footer_content {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 30px;
-}
-
-.content_item {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.qr_code {
-	width: 120px;
-}
-
-.content_item h2 {
-	margin-bottom: 25px;
-	font-size: 22px;
-}
-
-.qr_code {
-	margin-top: 10px;
+	background-color: #ececec;
+    padding: 25px 0;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+    color: #999;
 }

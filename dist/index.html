@@ -16,21 +16,22 @@
 	<link rel="stylesheet" href="./styles/common/swiper.min.css">
 	<link rel="stylesheet" href="./styles/module/index.css">
 	
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8j8I0oPTcmO5V4MVWYXaSW7u"></script>
 </head>
 <body>
-	<header>
-	<div class="top_tab">
+	<header id="header">
+	<div class="top_tab" id="topTab">
 		<div class="main_content">
 			<span class="brand_color phone">(020)81131999</span><a href="#">关于鼎冠</a><a href="#">网站导航</a>
 		</div>
 	</div>
-    <div class="header_content">
+    <div class="header_content" id="headerContent">
     	<div class="main_content">
     		<div class="header_box">
     			<a href="#" class="logo">
 		    		<img src="/styles/images/logo.png" alt="">
 		    	</a>
-			    <ul class="tab_list">
+			    <ul class="tab_list" id="tabList">
 			    	<li class="tab_item">
 			    		<a href="/index.html?index=0" class="tab_link">关于我们</a>
 			    	</li>
@@ -110,7 +111,7 @@
 	</div>
 
 	<div class="model dark_model">
-		<h1 class="model_title">企业发展</h1>
+		<h1 class="model_title" id="develop" data-index="1">企业发展</h1>
 		<div class="model_content">
 			<div class="company_content_box">
 				<div class="company_content">
@@ -149,7 +150,7 @@
 	</div>
 
 	<div class="model dark_model">
-		<h1 class="model_title">最新动态</h1>
+		<h1 class="model_title" id="news" data-index="2">最新动态</h1>
 		<div class="model_content news_model">
 			<div class="swiper-container" id="dynamicState">
 		        <div class="swiper-wrapper news_wrapper">
@@ -190,6 +191,7 @@
 		            	<div class="news_content_box">
 		            		<p class="news_content">
 	                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州。
+	                        </p>
 		            	</div>
 		            </div>
 		        </div>
@@ -197,8 +199,8 @@
 		</div>
 	</div>
 
-	<div class="model dark_model">
-		<h1 class="model_title">合作伙伴</h1>
+	<div class="model">
+		<h1 class="model_title" id="partner" data-index="4">合作伙伴</h1>
 		<div class="model_content">
 			<ul class="partner_list">
 				<li class="partner_item"><img src="./styles/images/_006.png" alt=""></li>
@@ -214,28 +216,27 @@
 			</ul>
 		</div>
 	</div>
+
+	<div class="model dark_model">
+		<h1 class="model_title" id="contact" data-index="5">联系我们</h1>
+		<div class="model_content contact_model">
+			<div class="left_content">
+				<p class="pre">无论您是想咨询信息，解决问题，或者是对我们的服务提出建议，您都可以用多种方式 联系我们，我们会尽我们所能为您服务！</p>
+				<p class="pre">名称：广州实盈投资管理有限公司</p>
+				<p class="pre">客户邮箱：cs@supwin.com</p>
+				<p class="pre">电话：020-23388388</p>
+				<p class="pre">传真：020-23388389</p>
+				<p class="pre">地址：广东省广州市天河区珠江东路6号广州周大福金融中心53楼全层</p>
+				<p class="pre">邮编：510627</p>
+			</div>
+			<div class="right_content">
+				<div class="map" id="map"></div>
+			</div>
+		</div>
+	</div>
 	
 	<footer>
-    <div class="main_content">
-        <div class="footer_content">
-            <div class="content_item">
-                <h2>股市有风险，入市需谨慎！</h2>
-                <a href="#" class="record_link">粤ICP备17129673号-10</a>
-            </div>
-            <div class="content_item">
-                <h2>客服热线：400-113-0080</h2>
-                <div>
-                    <p>工作时间：周一至周五 09:00-18:00</p>
-                    <p>Copyright © 2018 深圳前海拾点零网络科技有限公司</p>
-                </div>
-            </div>
-            <div class="content_item">
-                <p>苹果、安卓App</p>
-                <img src="/styles/images/xz.png" alt="" class="qr_code">
-            </div>
-            
-        </div>
-    </div>
+    <p>实盈投资有限公司版权所有 All Rights Reserved 网站备案号:粤ICP备14041727</p>
 </footer>
 	<script src="./js/common/jquery-1.12.4.min.js"></script>
 	<script src="./js/common/header.js"></script>

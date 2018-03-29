@@ -47,6 +47,19 @@
 	font-size: 0;
 }
 
+header.fixed .top_tab {
+	margin-bottom: 80px;
+}
+
+header.fixed .header_content {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	background: rgba(255, 255, 255, .8);
+}
+
 .logo {
 	display: inline-block;
 	padding: 14px 0;
@@ -97,7 +110,7 @@
 .tool_model {
 	position: fixed;
 	right: 0;
-	top: 80%;
+	bottom: 10%;
 	color: #fff;
 	z-index: 1000;
 }

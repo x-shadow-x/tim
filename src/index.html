@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="./styles/common/swiper.min.css">
 	<link rel="stylesheet" href="./styles/module/index.css">
 	
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8j8I0oPTcmO5V4MVWYXaSW7u"></script>
 </head>
 <body>
 	@@include('./include/header.html')
@@ -36,7 +37,7 @@
 	</div>
 
 	<div class="model dark_model">
-		<h1 class="model_title">企业发展</h1>
+		<h1 class="model_title" id="develop" data-index="1">企业发展</h1>
 		<div class="model_content">
 			<div class="company_content_box">
 				<div class="company_content">
@@ -75,7 +76,7 @@
 	</div>
 
 	<div class="model dark_model">
-		<h1 class="model_title">最新动态</h1>
+		<h1 class="model_title" id="news" data-index="2">最新动态</h1>
 		<div class="model_content news_model">
 			<div class="swiper-container" id="dynamicState">
 		        <div class="swiper-wrapper news_wrapper">
@@ -116,6 +117,7 @@
 		            	<div class="news_content_box">
 		            		<p class="news_content">
 	                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州。
+	                        </p>
 		            	</div>
 		            </div>
 		        </div>
@@ -123,8 +125,8 @@
 		</div>
 	</div>
 
-	<div class="model dark_model">
-		<h1 class="model_title">合作伙伴</h1>
+	<div class="model">
+		<h1 class="model_title" id="partner" data-index="4">合作伙伴</h1>
 		<div class="model_content">
 			<ul class="partner_list">
 				<li class="partner_item"><img src="./styles/images/_006.png" alt=""></li>
@@ -138,6 +140,24 @@
 				<li class="partner_item"><img src="./styles/images/_009.png" alt=""></li>
 				<li class="partner_item"><img src="./styles/images/_011.png" alt=""></li>
 			</ul>
+		</div>
+	</div>
+
+	<div class="model dark_model">
+		<h1 class="model_title" id="contact" data-index="5">联系我们</h1>
+		<div class="model_content contact_model">
+			<div class="left_content">
+				<p class="pre">无论您是想咨询信息，解决问题，或者是对我们的服务提出建议，您都可以用多种方式 联系我们，我们会尽我们所能为您服务！</p>
+				<p class="pre">名称：广州实盈投资管理有限公司</p>
+				<p class="pre">客户邮箱：cs@supwin.com</p>
+				<p class="pre">电话：020-23388388</p>
+				<p class="pre">传真：020-23388389</p>
+				<p class="pre">地址：广东省广州市天河区珠江东路6号广州周大福金融中心53楼全层</p>
+				<p class="pre">邮编：510627</p>
+			</div>
+			<div class="right_content">
+				<div class="map" id="map"></div>
+			</div>
 		</div>
 	</div>
 	
