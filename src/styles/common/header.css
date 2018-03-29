@@ -51,6 +51,10 @@
 	padding-right: 0;
 }
 
+.tab_item.active a {
+	color: #d73a41;
+}
+
 .learn_more {
 	position: absolute;
 	right: 0;
@@ -60,4 +64,78 @@
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 	font-size: 14px;
+}
+
+.tool_model {
+	position: fixed;
+	right: 0;
+	top: 80%;
+	color: #fff;
+	z-index: 1000;
+}
+
+.tool_item {
+	position: relative;
+	font-size: 0;
+	cursor: pointer;
+}
+
+.tool_item + .tool_item {
+	margin-top: 2px;
+}
+
+.tool_detail {
+	position: absolute;;
+	right: 100%;
+	top: 0;
+	max-width: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+	background: #d73a41;
+	font-size: 14px;
+	-webkit-transition: max-width .32s linear;
+	-o-transition: max-width .32s linear;
+	transition: max-width .32s linear;
+}
+
+.tool_detail.show {
+	max-width: 300px;
+}
+
+.tool_detail.flex {
+	height: 100%;
+}
+
+.tool_detail_box {
+	min-height: 100%;
+	padding: 0 20px;
+}
+
+.tool_detail.flex .tool_detail_box {
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.tool_icon {
+	position: relative;
+	z-index: 2;
+}
+
+.tool_detail_box>p {
+	line-height: 2;
+}
+
+.qq_list {
+	text-align: left;
+	line-height: 2;
+}
+
+.qq_chart_icon {
+	width: 92px;
 }
