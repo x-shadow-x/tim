@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="ovf_iden">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="Cache-Control" content="max-age=3600" />
@@ -18,9 +18,10 @@
 	
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8j8I0oPTcmO5V4MVWYXaSW7u"></script>
 </head>
-<body>
+<body class="ovf_iden">
 	@@include('./include/header.html')
-	<div class="bannre_box">
+	<div class="loading" id="loadingHover"></div>
+	<div class="bannre_box animate_model">
 		<div class="swiper-container" id="banner">
 	        <div class="swiper-wrapper">
 	            <div class="swiper-slide">
@@ -36,7 +37,7 @@
 	    </div>
 	</div>
 
-	<div class="model dark_model">
+	<div class="model dark_model animate_model develop_model_area">
 		<h1 class="model_title" id="develop" data-index="1">企业发展</h1>
 		<div class="model_content">
 			<div class="company_content_box">
@@ -50,7 +51,7 @@
 		</div>
 	</div>
 
-	<div class="model">
+	<div class="model animate_model intro_model_area">
 		<div class="model_content">
 			<ul class="company_intro_list">
 				<li class="company_intro_item">
@@ -75,7 +76,7 @@
 		</div>
 	</div>
 
-	<div class="model dark_model">
+	<div class="model dark_model animate_model news_model_area">
 		<h1 class="model_title" id="news" data-index="2">最新动态</h1>
 		<div class="model_content news_model">
 			<div class="swiper-container" id="dynamicState">
@@ -125,7 +126,7 @@
 		</div>
 	</div>
 
-	<div class="model">
+	<div class="model animate_model partner_model_area">
 		<h1 class="model_title" id="partner" data-index="4">合作伙伴</h1>
 		<div class="model_content">
 			<ul class="partner_list">
@@ -143,7 +144,7 @@
 		</div>
 	</div>
 
-	<div class="model dark_model">
+	<div class="model dark_model contact_model">
 		<h1 class="model_title" id="contact" data-index="5">联系我们</h1>
 		<div class="model_content contact_model">
 			<div class="left_content">
