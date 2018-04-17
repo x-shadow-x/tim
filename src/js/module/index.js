@@ -74,4 +74,28 @@ $(function() {
             map.addOverlay(marker);
         }
     }, "广东省");
-})
+
+    var updateHeight = $(window).height() / 2;
+    var animateList = $('.animate_model').map(function(index, item) {
+        return {
+            top: $(item).offset().top - updateHeight,
+            el: item
+        }
+    });
+
+    $(document).scroll(function() {
+        for(var i = 0, len = animateList.length; i < len; i++) {
+            var scrollTop = $(this).scrollTop();
+            if(scrollTop >= animateList[i].top) {
+                $(animateList[i].el).addClass('load');
+            }
+        }
+    });
+});
+
+(function preLoad() {
+    addLoadEvent(function() {
+        $('#loadingHover').fadeOut();
+        $('html,body').removeClass('ovf_iden');
+    });
+})()

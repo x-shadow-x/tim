@@ -86,6 +86,11 @@
 	margin: 0 15px;
 	border-top: 1px solid #f3f3f3;
     border-bottom: 1px solid #f3f3f3;
+    top: -30px;
+    opacity: 0;
+    -webkit-transition: opacity .8s, top .6s;
+	-o-transition: opacity .8s, top .6s;
+	transition: opacity .8s, top .6s;
 }
 
 .company_intro_item:after {
@@ -107,6 +112,11 @@
 
 .company_intro_item:hover:after {
 	opacity: 0;
+}
+
+.intro_model_area.load .company_intro_item {
+	top: 0;
+	opacity: 1;
 }
 
 .company_intro_icon {
@@ -135,6 +145,14 @@
 	width: 1200px;
 	margin: 0 auto;
 	padding-bottom: 20px;
+	opacity: 0;
+    -webkit-transition: opacity .8s;
+	-o-transition: opacity .8s;
+	transition: opacity .8s;
+}
+
+.news_model_area.load .news_model {
+	opacity: 1;
 }
 
 .news_wrapper .swiper-slide {
