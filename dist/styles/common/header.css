@@ -1,3 +1,9 @@
+.blur {
+	-webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+}
 .main_content {
 	position: relative;
 	width: 1000px;
@@ -5,13 +11,21 @@
 }
 
 .brand_color {
-	color: #c6ab5c;
+	color: #e60012;
 }
 
 .top_tab {
     line-height: 36px;
     background: #707070;
-    text-align: right;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.welcome_tip {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .top_tab a {
@@ -37,10 +51,23 @@
 	background: #fff;
 }
 
+.wx_icon,
 .phone {
 	display: inline-block;
 	vertical-align: middle;
-	font-weight: bolder;
+}
+
+.wx_icon {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background: #888;
+	text-align: center;
+	border-radius: 100px;
+}
+
+.phone {
+	margin-left: 20px;
 }
 
 .header_box {
@@ -93,7 +120,7 @@ header.fixed .header_content {
 .tab_item.active a,
 .tab_item a:active,
 .tab_item a:hover {
-	color: #c6ab5c;
+	color: #e60012;
 }
 
 .learn_more {
@@ -133,7 +160,7 @@ header.fixed .header_content {
 	overflow: hidden;
 	white-space: nowrap;
 	text-align: center;
-	background: #c6ab5c;
+	background: #e60012;
 	font-size: 14px;
 	-webkit-transition: max-width .32s linear;
 	-o-transition: max-width .32s linear;
@@ -179,4 +206,78 @@ header.fixed .header_content {
 
 .qq_chart_icon {
 	width: 92px;
+}
+
+.fa.light {
+	color: #fff;
+}
+
+.qr_hover {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	background: rgba(0, 0, 0, .8);
+	display: none;
+}
+
+.qr_box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 500px;
+	text-align: center;
+	background: #fff;
+	border-radius: 8px;
+	padding: 60px 20px 20px 20px;
+}
+
+.close_btn {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 20px;
+}
+
+.qr_box_title {
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.qr_img {
+	width: 250px;
+}
+
+.qr_code_tip {
+	margin: 10px auto 20px auto;
+}
+
+.tip_box {
+	border-top: 1px solid #e5e5e5;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.wx_img,
+.wx_tip {
+	display: inline-block;
+	vertical-align: middle;
+	color: #777;
+}
+
+.wx_img {
+	width: 51px;
+	margin-right: 20px;
+}
+
+.wx_tip_title {
+	padding-bottom: 10px;
+	font-weight: bolder;
 }

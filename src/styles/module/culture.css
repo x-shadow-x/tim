@@ -1,0 +1,41 @@
+body {
+	padding-bottom: 100px;
+}
+
+.strong {
+	color: #e60012;
+}
+
+.router_tab {
+	background-color: #f8f8f8;
+    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    line-height: 36px;
+}
+
+.title {
+	margin: 20px 0;
+}
+
+.content_box {
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.content_text {
+	float: left;
+	width: 48%;
+	line-height: 1.8;
+}
+
+.content_img {
+	float: right;
+	width: 48%;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}

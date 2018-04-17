@@ -11,6 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
 	<title>首页</title>
 	<link rel="stylesheet" href="./styles/common/cn.css">
+	<link rel="stylesheet" href="./styles/common/font-awesome.min.css">
 	<link rel="stylesheet" href="./styles/common/header.css">
 	<link rel="stylesheet" href="./styles/common/footer.css">
 	<link rel="stylesheet" href="./styles/common/swiper.min.css">
@@ -19,10 +20,13 @@
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8j8I0oPTcmO5V4MVWYXaSW7u"></script>
 </head>
 <body>
-	<header id="header">
+	<div id="mainOutBox">
+		<header id="header">
 	<div class="top_tab" id="topTab">
 		<div class="main_content">
-			<span class="brand_color phone">(020)81131999</span><a href="#">关于鼎冠</a><a href="#">网站导航</a>
+			<span class="wx_icon" id="wxIcon"><i class="fa fa-weixin light"></i></span>
+			<span class="phone"><i class="fa fa-phone light"></i> (020)81131999</span><a href="#">关于鼎冠</a><a href="#">网站导航</a>
+			<span class="welcome_tip">深圳万银基金欢迎您！</span>
 		</div>
 	</div>
     <div class="header_content" id="headerContent">
@@ -33,22 +37,22 @@
 		    	</a>
 			    <ul class="tab_list" id="tabList">
 			    	<li class="tab_item">
-			    		<a href="/index.html?index=0" class="tab_link">关于我们</a>
+			    		<a href="/index.html?index=0" class="tab_link">首页</a>
 			    	</li>
 			    	<li class="tab_item">
-			    		<a href="#" class="tab_link">企业发展</a>
+			    		<a href="#" class="tab_link">万银概况</a>
 			    	</li>
 			    	<li class="tab_item">
-			    		<a href="#" class="tab_link">最新动态</a>
+			    		<a href="#" class="tab_link">企业文化</a>
 			    	</li>
 			    	<li class="tab_item">
-			    		<a href="/pages/help.html?index=3" class="tab_link">客服中心</a>
+			    		<a href="/pages/help.html?index=3" class="tab_link">合作伙伴</a>
 			    	</li>
 			    	<li class="tab_item">
-			    		<a href="/pages/about.html?index=4" class="tab_link">合作伙伴</a>
+			    		<a href="/pages/about.html?index=4" class="tab_link">联系我们</a>
 			    	</li>
 			    	<li class="tab_item">
-			    		<a href="/pages/about.html?index=5" class="tab_link">联系我们</a>
+			    		<a href="recruit.html" class="tab_link">加入我们</a>
 			    	</li>
 			    </ul>
     		</div>
@@ -93,151 +97,183 @@
 		</li>
 	</ul>
 </div>
+		<div class="bannre_box">
+			<div class="swiper-container" id="banner">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide">
+		            	<img src="./styles/images/001.png" alt="" class="banner_img">
+		            </div>
+		            <div class="swiper-slide">
+		            	<img src="./styles/images/002.png" alt="" class="banner_img">
+		            </div>
+		            <div class="swiper-slide">
+		            	<img src="./styles/images/003.png" alt="" class="banner_img">
+		            </div>
+		            <div class="swiper-slide">
+		            	<img src="./styles/images/004.png" alt="" class="banner_img">
+		            </div>
+		        </div>
+		        <div class="swiper-pagination"></div>
+		        <div class="swiper-button-next" id="bannerSwiperButtonNext"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+		        <div class="swiper-button-prev" id="bannerSwiperButtonPrev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+		    </div>
+		</div>
 
-	<div class="bannre_box">
-		<div class="swiper-container" id="banner">
-	        <div class="swiper-wrapper">
-	            <div class="swiper-slide">
-	            	<img src="./styles/images/temp_banner.jpg" alt="" class="banner_img">
-	            </div>
-	            <div class="swiper-slide">
-	            	<img src="./styles/images/temp_banner.jpg" alt="" class="banner_img">
-	            </div>
-	            <div class="swiper-slide">
-	            	<img src="./styles/images/temp_banner.jpg" alt="" class="banner_img">
-	            </div>
-	        </div>
-	    </div>
-	</div>
+		<div class="model dark_model">
+			<h1 class="model_title" id="develop" data-index="1">万银概况</h1>
+			<div class="model_content">
+				<div class="company_content_box">
+					<div class="company_content">
+						<img src="./styles/images/company_img.jpg" alt="" class="company_img">
+						<p class="company_text">
+							深圳万银基金管理有限公司成立于2015年12月31日，自公司创立以来，致力打造互联网金融平台、金融投资顾问服务平台，专业财富管理中心。集合国内专业分析团队，以专业科学的分析方法，中外合璧的系统完备信息数据资源，为客户量身定制完善的投资分析服务。我们努力将优质服务惠及广大投资者，以我们的激情及斗志，助力投资者，走向成功之轮。
+       万银凭借雄厚的综合实力、深厚的行业背景，依靠严格规范、高效执行、稳健发展的管理体系，秉承“以客户为中心，为客户创造价值，互利互赢”的发展战略，锐意迎合全球化的趋势，为广大投资者及时传递金融资讯、股票行情分析。通过对市场的专业化分析和实行缜密的投资方案，提高客户投资收益。
 
-	<div class="model dark_model">
-		<h1 class="model_title" id="develop" data-index="1">企业发展</h1>
-		<div class="model_content">
-			<div class="company_content_box">
-				<div class="company_content">
-					<img src="./styles/images/temp.jpg" alt="" class="company_img">
-					<p>
-						实盈金融服务有限公司是一个以资产管理，影视投资及金融咨询为主业的综合型金融服务公司。公司不断与金融 同业共同探索新业务，以整合的“大金融”平台模式，为客户提供创新的“一站式”服务。
-					</p>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="model">
-		<div class="model_content">
-			<ul class="company_intro_list">
-				<li class="company_intro_item">
-					<img src="./styles/images/1.jpg" alt="" class="company_intro_icon">
-					<h2 class="company_intro_title">实盈金服</h2>
-					<p class="desc">团队独立研发的ALGOFORCE®量化交易系统，针对某交易品种存在的交易帮助客户稳，定实现套利。</p>
-					<a href="#" class="brand_color more_link">了解更多 &gt;</a>
-				</li>
-				<li class="company_intro_item">
-					<img src="./styles/images/2.jpg" alt="" class="company_intro_icon">
-					<h2 class="company_intro_title">儒意实盈</h2>
-					<p class="desc">投资影视项目股权、版权购买的公募、私募基金。包括专项基金和投向中包含影视文化产业的非专项基金。 </p>
-					<a href="#" class="brand_color more_link">了解更多 &gt;</a>
-				</li>
-				<li class="company_intro_item">
-					<img src="./styles/images/3.jpg" alt="" class="company_intro_icon">
-					<h2 class="company_intro_title">Quant Research Lab_</h2>
-					<p class="desc">团队汇聚众多数学、物理学、统计学专家和华尔街的金融专业人士，研发各类金融产品、金融衍生品。</p>
-					<a href="#" class="brand_color more_link">了解更多 &gt;</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="model dark_model">
-		<h1 class="model_title" id="news" data-index="2">最新动态</h1>
-		<div class="model_content news_model">
-			<div class="swiper-container" id="dynamicState">
-		        <div class="swiper-wrapper news_wrapper">
-		            <div class="swiper-slide">
-		            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
-		            	<div class="news_content_box">
-		            		<p class="news_content">
-	                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州，参加了实盈量化研究所Quant Lab的剪彩仪式，这也是柯利明在实盈小伙伴面前的第一次亮相，谈到亮相实盈，Raymond坦言非常兴奋 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, non temporibus sed, ipsum molestias quasi officia harum possimus omnis doloremque expedita minima earum assumenda sit cum dolorem incidunt ipsa. Ipsam.
-			            	</p>
-		            	</div>
-		            </div>
-		            <div class="swiper-slide">
-		            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
-		            	<div class="news_content_box">
-		            		<p class="news_content">
-	                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州，参加了实盈量化研究所Quant Lab的剪彩仪式。
-			            	</p>
-		            	</div>
-		            </div>
-		            <div class="swiper-slide">
-		            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
-		            	<div class="news_content_box">
-		            		<p class="news_content">
-	                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州，参加了实盈量化研究所Quant Lab的剪彩仪式，这也是柯利明在实盈小伙伴面前的第一次亮相，谈到亮相实盈，Raymond坦言非常兴奋 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, non temporibus sed, ipsum molestias quasi officia harum possimus omnis doloremque expedita minima earum assumenda sit cum dolorem incidunt ipsa. Ipsam.
-			            	</p>
-		            	</div>
-		            </div>
-		            <div class="swiper-slide">
-		            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
-		            	<div class="news_content_box">
-		            		<p class="news_content">
-	                            实盈集团主席柯利明在参加完上海电影节后。
-			            	</p>
-		            	</div>
-		            </div>
-		            <div class="swiper-slide">
-		            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
-		            	<div class="news_content_box">
-		            		<p class="news_content">
-	                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州。
-	                        </p>
-		            	</div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-	</div>
-
-	<div class="model">
-		<h1 class="model_title" id="partner" data-index="4">合作伙伴</h1>
-		<div class="model_content">
-			<ul class="partner_list">
-				<li class="partner_item"><img src="./styles/images/_006.png" alt=""></li>
-				<li class="partner_item"><img src="./styles/images/_005.png" alt=""></li>
-				<li class="partner_item"><img src="./styles/images/_002.png" alt=""></li>
-				<li class="partner_item"><img src="./styles/images/_003.png" alt=""></li>
-				<li class="partner_item"><img src="./styles/images/_010.png" alt=""></li>
-				<li class="partner_item"><img src="./styles/images/_004.png" alt=""></li>
-				<li class="partner_item"><img src="./styles/images/_001.png" alt=""></li>
-				<li class="partner_item"><img src="./styles/images/_008.png" alt=""></li>
-				<li class="partner_item"><img src="./styles/images/_009.png" alt=""></li>
-				<li class="partner_item"><img src="./styles/images/_011.png" alt=""></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="model dark_model">
-		<h1 class="model_title" id="contact" data-index="5">联系我们</h1>
-		<div class="model_content contact_model">
-			<div class="left_content">
-				<p class="pre">无论您是想咨询信息，解决问题，或者是对我们的服务提出建议，您都可以用多种方式 联系我们，我们会尽我们所能为您服务！</p>
-				<p class="pre">名称：广州实盈投资管理有限公司</p>
-				<p class="pre">客户邮箱：cs@supwin.com</p>
-				<p class="pre">电话：020-23388388</p>
-				<p class="pre">传真：020-23388389</p>
-				<p class="pre">地址：广东省广州市天河区珠江东路6号广州周大福金融中心53楼全层</p>
-				<p class="pre">邮编：510627</p>
-			</div>
-			<div class="right_content">
-				<div class="map" id="map"></div>
+		<div class="model">
+			<div class="model_content">
+				<ul class="company_intro_list">
+					<li class="company_intro_item">
+						<img src="./styles/images/1.png" alt="" class="company_intro_icon">
+						<h2 class="company_intro_title">万银文化</h2>
+						<p class="desc">万银基金是集股票投资、资产管理、风险投资、金融科技等业务的多元化投资企业，公司实力雄厚，拥有专家团队人数众多...</p>
+						<a href="#" class="brand_color more_link">了解更多 &gt;</a>
+					</li>
+					<li class="company_intro_item">
+						<img src="./styles/images/2.png" alt="" class="company_intro_icon">
+						<h2 class="company_intro_title">万银优势</h2>
+						<p class="desc">万银坚持“利益共享、安稳发展、达致目标”的企业经营理念，努力实现为客户创造价值、为员工提供机会...</p>
+						<a href="#" class="brand_color more_link">了解更多 &gt;</a>
+					</li>
+					<li class="company_intro_item">
+						<img src="./styles/images/3.png" alt="" class="company_intro_icon">
+						<h2 class="company_intro_title">加入我们</h2>
+						<div class="desc">
+							<p>万银知道，你的将来就在这里创造</p>
+							<p>万银知道，你的亮点尽在字里行间</p>
+							<p>加入万银，步步为赢</p>
+						</div>
+						<a href="recruit.html" class="brand_color more_link">了解更多 &gt;</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</div>
-	
-	<footer>
-    <p>实盈投资有限公司版权所有 All Rights Reserved 网站备案号:粤ICP备14041727</p>
+
+		<!-- <div class="model dark_model">
+			<h1 class="model_title" id="news" data-index="2">最新动态</h1>
+			<div class="model_content news_model">
+				<div class="swiper-container" id="dynamicState">
+			        <div class="swiper-wrapper news_wrapper">
+			            <div class="swiper-slide">
+			            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
+			            	<div class="news_content_box">
+			            		<p class="news_content">
+		                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州，参加了实盈量化研究所Quant Lab的剪彩仪式，这也是柯利明在实盈小伙伴面前的第一次亮相，谈到亮相实盈，Raymond坦言非常兴奋 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, non temporibus sed, ipsum molestias quasi officia harum possimus omnis doloremque expedita minima earum assumenda sit cum dolorem incidunt ipsa. Ipsam.
+				            	</p>
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
+			            	<div class="news_content_box">
+			            		<p class="news_content">
+		                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州，参加了实盈量化研究所Quant Lab的剪彩仪式。
+				            	</p>
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
+			            	<div class="news_content_box">
+			            		<p class="news_content">
+		                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州，参加了实盈量化研究所Quant Lab的剪彩仪式，这也是柯利明在实盈小伙伴面前的第一次亮相，谈到亮相实盈，Raymond坦言非常兴奋 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, non temporibus sed, ipsum molestias quasi officia harum possimus omnis doloremque expedita minima earum assumenda sit cum dolorem incidunt ipsa. Ipsam.
+				            	</p>
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
+			            	<div class="news_content_box">
+			            		<p class="news_content">
+		                            实盈集团主席柯利明在参加完上海电影节后。
+				            	</p>
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="./styles/images/news_temp.jpg" alt="" class="news_img">
+			            	<div class="news_content_box">
+			            		<p class="news_content">
+		                            实盈集团主席柯利明在参加完上海电影节后，便马不停蹄的飞赴广州。
+		                        </p>
+			            	</div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div> -->
+
+		<div class="model dark_model">
+			<h1 class="model_title" id="partner" data-index="4">合作伙伴</h1>
+			<div class="model_content">
+				<ul class="partner_list">
+					<li class="partner_item"><img src="./styles/images/c1.png" alt=""></li>
+					<li class="partner_item"><img src="./styles/images/c2.png" alt=""></li>
+					<li class="partner_item"><img src="./styles/images/c3.png" alt=""></li>
+					<li class="partner_item"><img src="./styles/images/c4.png" alt=""></li>
+					<li class="partner_item"><img src="./styles/images/c5.png" alt=""></li>
+					<li class="partner_item"><img src="./styles/images/c6.png" alt=""></li>
+					<li class="partner_item"><img src="./styles/images/c7.png" alt=""></li>
+					<li class="partner_item"><img src="./styles/images/c8.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="model dark_model">
+			<h1 class="model_title" id="contact" data-index="5">联系我们</h1>
+			<div class="model_content contact_model">
+				<div class="left_content">
+					<p class="pre">无论您是想咨询信息，解决问题，或者是对我们的服务提出建议，您都可以用多种方式 联系我们，我们会尽我们所能为您服务！</p>
+					<p class="pre">名称：深圳万银基金管理有限公司</p>
+					<p class="pre">电话：400-187-62688</p>
+					<p class="pre">地址：广东省广州市天河区兴民路222号天盈广场西塔15楼</p>
+					<p class="pre">邮编：510623</p>
+					<div class="separator-2"></div>
+					<div class="link_label_box">
+						<span class="link_label">
+							<i class="fa fa-weixin"></i>
+						</span>
+						<span class="link_label">
+							<span>招</span>
+						</span>
+					</div>
+				</div>
+				<div class="right_content">
+					<div class="map" id="map"></div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+    <p>深圳万银基金管理有限公司版权所有 All Rights Reserved 网站备案号：粤ICP备14014727</p>
 </footer>
+	</div>
+	<div class="qr_hover" id="qrHover">
+	<div class="qr_box">
+		<span class="close_btn" id="closeBtn"><i class="fa fa-close"></i></span>
+		<h2 class="brand_color qr_box_title">万银基金微信公众平台</h2>
+		<img src="../styles/images/qr_code.png" alt="" class="qr_img">
+		<p class="qr_code_tip">扫一扫关注我们</p>
+		<div class="tip_box">
+			<img src="../styles/images/weixin_icon.png" alt="" class="wx_img">
+			<div class="wx_tip">
+				<p class="wx_tip_title">微信扫描二维码</p>
+				<p>打开微信 > 点击 "发现" > "扫一扫"</p>
+			</div>
+		</div>
+	</div>
+</div>
 	<script src="./js/common/jquery-1.12.4.min.js"></script>
 	<script src="./js/common/header.js"></script>
 	<script src="./js/common/swiper.min.js"></script>
