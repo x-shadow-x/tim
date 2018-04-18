@@ -10,6 +10,44 @@ function addLoadEvent(fn) {
 	}
 }
 
+(function() {
+	var offsetArr = [];
+	var topTabHeight = $('#topTab').outerHeight();
+	var headerContentHeight = $('#headerContent').outerHeight();
+	$('.module_item').each(function(index, item) {
+		offsetArr.push({
+			key: parseInt(Math.max($(item).offset().top - headerContentHeight - 100, 0)),
+			index: $(item).attr('data-index')
+		});
+	});
+
+	$('.header_box').on('click', '.tab_item', function() {
+		var index = $(this).index();
+		var url = $(this).attr('data-url');
+		var length = offsetArr.length;
+		var scroll = -1;
+
+		if (window.location.pathname.indexOf(url) >= 0) {
+			var step = 0;
+			while (step < length) {
+				if (offsetArr[step].index == index) {
+					scroll = offsetArr[step].key;
+					break;
+				}
+				step = step + 1;
+			}
+			if (scroll < 0) {
+				return;
+			}
+			$("html,body").animate({
+				scrollTop: scroll
+			}, 500);
+		} else {
+			window.location.href = url
+		}
+	});
+})()
+
 $(function() {
 
 	$('#toTop').click(function() {

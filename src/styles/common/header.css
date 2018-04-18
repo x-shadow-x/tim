@@ -64,6 +64,11 @@
 	background: #888;
 	text-align: center;
 	border-radius: 100px;
+	cursor: pointer;
+}
+
+.wx_icon:hover {
+	background: #e60012;
 }
 
 .phone {
@@ -111,15 +116,15 @@ header.fixed .header_content {
 	display: inline-block;
 	font-size: 16px;
 	padding: 0 20px;
+	cursor: pointer;
 }
 
 .tab_item:last-child {
 	padding-right: 0;
 }
 
-.tab_item.active a,
-.tab_item a:active,
-.tab_item a:hover {
+.tab_item.active,
+.tab_item:hover {
 	color: #e60012;
 }
 

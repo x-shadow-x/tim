@@ -1,38 +1,60 @@
 $(function() {
 
     (function() {
-        var offsetArr = [{
-            key: 0,
-            index: 0
-        }];
+        var offsetArr = [];
         var topTabHeight = $('#topTab').outerHeight();
         var headerContentHeight = $('#headerContent').outerHeight();
-        $('.model_title').each(function(index, item) {
-            // console.log(item, $(item).offset().top);
+        $('.module_item').each(function(index, item) {
             offsetArr.push({
-                key: $(item).offset().top - headerContentHeight - 100,
+                key: parseInt(Math.max($(item).offset().top - headerContentHeight - 100, 0)),
                 index: $(item).attr('data-index')
             });
         });
+
+        $('.header_box').on('click', '.tab_item', function() {
+            var index = $(this).index();
+            var url = $(this).attr('data-url');
+            var length = offsetArr.length;
+            var scroll = -1;
+
+            if (window.location.pathname.indexOf(url) >= 0) {
+                var step = 0;
+
+                while (step < length) {
+                    if (offsetArr[step].index == index) {
+                        scroll = offsetArr[step].key;
+                        break;
+                    }
+                    step = step + 1;
+                }
+                if (scroll < 0) {
+                    return;
+                }
+                $("html,body").animate({
+                    scrollTop: scroll
+                }, 500);
+            } else {
+                window.location.href = window.location.host + url
+            }
+        });
+
         var length = offsetArr.length;
-        // console.log(offsetArr);
         $(document).scroll(function() {
-            var scrollTop = $(this).scrollTop();
+            var scrollTop = Math.round($(this).scrollTop());
             if (scrollTop > topTabHeight) {
                 $('#header').addClass('fixed');
             } else {
                 $('#header').removeClass('fixed');
             }
+            console.log(scrollTop, offsetArr);
             var step = 0;
             while (step < length - 1) {
-                // console.log(offsetArr[step + 1]);
                 if (scrollTop >= offsetArr[step].key && scrollTop < offsetArr[step + 1].key) {
                     break;
                 }
                 step = step + 1;
             }
             var index = offsetArr[step].index;
-            // console.log(index, '===========', scrollTop);
             $('#tabList').find('.tab_item').removeClass('active').eq(index).addClass('active');
         });
 
@@ -84,9 +106,9 @@ $(function() {
     });
 
     $(document).scroll(function() {
-        for(var i = 0, len = animateList.length; i < len; i++) {
+        for (var i = 0, len = animateList.length; i < len; i++) {
             var scrollTop = $(this).scrollTop();
-            if(scrollTop >= animateList[i].top) {
+            if (scrollTop >= animateList[i].top) {
                 $(animateList[i].el).addClass('load');
             }
         }

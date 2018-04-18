@@ -1,7 +1,3 @@
-body {
-	padding-bottom: 100px;
-}
-
 .strong {
 	color: #e60012;
 }
@@ -33,9 +29,7 @@ body {
 	width: 48%;
 }
 
-footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
+.fa {
+	font-weight: lighter;
+	font-size: 12px;
 }
