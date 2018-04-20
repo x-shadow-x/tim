@@ -17,9 +17,7 @@ $(function() {
             var url = $(this).attr('data-url');
             var length = offsetArr.length;
             var scroll = -1;
-
-            if (window.location.pathname.indexOf(url) >= 0) {
-                console.log(111);
+            if (window.location.pathname.indexOf(url) >= 0 || window.location.pathname.indexOf('html') < 0) {
                 var step = 0;
 
                 while (step < length) {
