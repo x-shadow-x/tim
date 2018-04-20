@@ -12,12 +12,14 @@ $(function() {
         });
 
         $('.header_box').on('click', '.tab_item', function() {
+            console.log(123);
             var index = $(this).index();
             var url = $(this).attr('data-url');
             var length = offsetArr.length;
             var scroll = -1;
 
             if (window.location.pathname.indexOf(url) >= 0) {
+                console.log(111);
                 var step = 0;
 
                 while (step < length) {
@@ -27,9 +29,11 @@ $(function() {
                     }
                     step = step + 1;
                 }
+                
                 if (scroll < 0) {
                     return;
                 }
+
                 $("html,body").animate({
                     scrollTop: scroll
                 }, 500);
@@ -112,6 +116,12 @@ $(function() {
                 $(animateList[i].el).addClass('load');
             }
         }
+    });
+
+    $('#wxIcon2').click(function() {
+        $('#qrHover').fadeIn(240, function() {
+            $('#mainOutBox').addClass('blur')
+        });
     });
 });
 
